@@ -1,0 +1,274 @@
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville);
+
+#skipcontent{
+	left: -1000px;
+	position: absolute;
+}
+
+#main{
+	height: 150vh;
+}
+
+#skipcontent:focus{
+	left: 5px;
+	top: 5px;
+	display: inline-block;
+}
+
+.typewriter h1 {
+	color: rgb(7, 7, 7);
+	font-family: monospace;
+	font-size: 5em;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	/* border-right: .15em solid rgb(208, 255, 0); The typwriter cursor */
+	/* white-space: pre-wrap; Keeps the content on a single line */
+	/* margin: 0 auto; Gives that scrolling effect as the typing happens */
+	letter-spacing: .1em; /* Adjust as needed */
+	animation: 
+	  typing 3.5s steps(30, end),
+	  blink-caret .2s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+	  display: none;
+	/* from, to { border-color: transparent }
+	10% { border-color: orange } */
+  }
+
+h1 {
+	font-family: 'Libre Baskerville';
+	font-size: 2em;
+	font-weight: bold;
+	padding-top: 3em;
+	margin-bottom: .5em;
+	text-align: center;
+	color: #050505;
+
+}
+h2 {
+	font-size: 3em;
+	font-weight: bold;
+	margin-bottom: 1em;
+	text-align: center;
+	font-family: 'Montserrat', serif;
+	color: #ee0505;
+	
+}
+.resumebody section h2 {
+	text-align: left;
+	font-family: 'Libre Baskerville', serif;
+	
+}
+
+.travelbody section h2 {
+	text-align: left;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 3em;
+	
+}
+h3 {
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+	color: #803300;
+	font-family: 'Libre Baskerville', serif;
+	margin-top: auto;
+	margin-bottom: auto;
+
+}
+p {
+	margin-bottom: 1em;
+}
+
+a {
+	text-decoration: none;
+	color: hsla(192, 80%, 37%, 0.87);
+	font-family: 'Libre Baskerville', serif;
+	font-weight: bold;
+}
+a:hover{
+	background-color: #555;
+	color: white;
+}
+
+
+body{
+	background-color:#f3f1de;
+	padding: 15px
+}
+
+
+nav ul li{
+	background-color: #f1f1f1;
+	text-decoration: none;
+	color:#000;
+	padding:8px 16px;
+	border: 1px solid #555;
+	text-align: center;
+	border-bottom: 1px solid #555
+	
+}
+h2{
+	font-size: 24px;
+}
+/* .home h1 a{
+	color: #800080;
+	font-family: 'Montserrat';
+	font-size: 2em;
+} */
+.current{
+	background-color: #4CAF50;
+  color: white;
+}
+
+
+.resumesection{
+	display:none;
+}
+
+.headshot{
+	display: none;
+}
+.photos{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	
+}
+
+/* 
+.photos img{
+
+} */
+.gallery{
+	width: 95%; 
+	/* height: 500px;   */
+	align-self: center;
+	
+}
+.fa-university, .fa-certificate, .fa-flask{
+	color: #00800b49;
+	font-size: 2em;
+}
+
+/*Form */
+div#formmain{
+	height:650px;
+	margin:0 auto;
+	font-family:'Libre Baskerville',sans-serif
+	}
+	div#form_sample{
+	border:1px solid #ccc;
+	width:-webkit-fill-available;;
+	padding:0 50px 15px;
+	margin-top:20px;
+	border-radius:6px;
+	float:left
+	}
+
+
+	#formmain h1{
+	margin-top:40px
+	}
+	hr{
+	margin-top:-5px
+	}
+	label{
+	float:left;
+	font-size:16px
+	}
+	input[type="text"]{
+	width:100%;
+	margin-top:10px;
+	height:35px;
+	margin-bottom:25px;
+	padding:10px;
+	border:3px solid #2BC1F2
+	}
+	textarea{
+	width:100%;
+	border:3px solid #2BC1F2;
+	padding:10px;
+	margin-bottom:25px;
+	margin-top:10px;
+	height:100px;
+	resize:none
+	}
+	input[type="submit"]{
+	width:100%;
+	padding:10px 45px;
+	background-color:#2BC1F2;
+	border:none;
+	color:#fff;
+	font-size:18px;
+	font-weight:700;
+	cursor:pointer;
+	font-family:'Libre Baskerville',sans-serif
+	}
+
+/*For tablets: */
+@media only screen and (min-width:600px){
+.photos {
+		justify-content: space-evenly;
+	
+}
+.gallery{
+	width: 50%;
+	height: 50vh;
+}
+
+.headshot{
+	display: block;
+
+}
+nav ul li{
+	width: 200px;
+	display:block; 
+}
+div#formanin{
+	width:830px;
+}
+} 
+
+
+/*For desktops: */
+@media only screen and (min-width:768px){
+	.gallery{
+		width: 30%;
+		
+	}
+	.landing{
+		background: url("../img/MainPage.jpg") no-repeat;
+	}
+
+	h1{
+		font-size: 4em;
+	}
+
+	nav ul li{
+		display:inline; 
+		padding-right:60px;
+		font-size: xx-large;		
+	}
+		
+	.typewriter h1 {
+		font-size: 3.5em;
+		white-space: nowrap; /* Keeps the content on a single line */
+		color: rgb(187, 19, 41);
+	
+	  }
+
+	  .resumesection{
+		display: block;
+	}
+	  
+}
